@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-        }
-        .login-container {
-            margin-top: 100px;
-        }
-        .login-form {
-            display: inline-block;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group {
-            margin-bottom: 20px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input[type="text"],
-        .form-group input[type="password"] {
-            width: 250px;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .login-btn {
-            padding: 10px 20px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .login-btn:hover {
-            background-color: #45a049;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style>
+    body {
+        background-image: url('background.jpg'); /* Path to your background image */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+    }
+    .login-container {
+        background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Drop shadow effect */
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        background-color: #007bff; /* Blue color for the button */
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3; /* Darker shade of blue on hover */
+    }
+</style>
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form" action="#" method="post">
-            <div class="form-group">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="login-btn">Login</button>
+        <h2>Login</h2>
+        <form action="#" method="post"> <!-- Replace "#" with the action URL -->
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="Login">
         </form>
     </div>
 </body>
